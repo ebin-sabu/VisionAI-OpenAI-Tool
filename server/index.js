@@ -17,7 +17,7 @@ const myAPIKey = process.env.API_KEY;
 // Configure open api
 const openai = new OpenAI({
     //organization: "org-fIMT5Gz64bl68vIgMT2NW9fc",
-    apiKey: myAPIKey
+    apiKey: process.env.API_KEY
 });
 
 
