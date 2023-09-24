@@ -12,10 +12,12 @@ env.config()
 app.use(cors())
 app.use(bodyParser.json())
 
+const myAPIKey = process.env.API_KEY;
+
 // Configure open api
 const openai = new OpenAI({
     //organization: "org-fIMT5Gz64bl68vIgMT2NW9fc",
-    apiKey: process.env.API_KEY
+    apiKey: myAPIKey
 });
 
 
